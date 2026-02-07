@@ -1,0 +1,30 @@
+{
+  "keywords": [
+    {
+      "query": "AI 副業",
+      "label": "AI副業"
+    },
+    {
+      "query": "ChatGPT 活用",
+      "label": "ChatGPT活用"
+    },
+    {
+      "query": "プロンプト コツ",
+      "label": "プロンプト術"
+    }
+  ],
+  "thresholds": {
+    "min_likes": 100,
+    "min_retweets": 100
+  },
+  "schedule": {
+    "cron": "*/30 * * * *",
+    "description": "30分ごとに検索"
+  },
+  "search": {
+    "max_results_per_query": 100,
+    "lang": "ja",
+    "exclude_retweets": true,
+    "hours_ago": 24
+  }
+}
