@@ -9,8 +9,8 @@
       "label": "ChatGPT活用"
     },
     {
-      "query": "プロンプト コツ",
-      "label": "プロンプト術"
+      "query": "Claude Code",
+      "label": "Claude Code"
     }
   ],
   "thresholds": {
@@ -22,9 +22,8 @@
     "description": "30分ごとに検索"
   },
   "search": {
-    "max_results_per_query": 100,
+    "max_results_per_query": 10,
     "lang": "ja",
-    "exclude_retweets": true,
     "hours_ago": 24
   }
 }

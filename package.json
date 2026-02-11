@@ -1,12 +1,14 @@
 {
   "name": "trending-post-notifier",
-  "version": "1.0.0",
-  "description": "X(Twitter)のバズ投稿を検知してLINEで通知するツール",
+  "version": "2.0.0",
+  "description": "Grok (xAI API) でXのバズ投稿を検知してLINEに通知するツール",
   "main": "src/index.js",
   "type": "module",
   "scripts": {
     "start": "node src/index.js",
-    "search-once": "node src/run-once.js"
+    "search-once": "node src/run-once.js",
+    "ideation": "node scripts/ideation.js",
+    "research": "node scripts/context_research.js"
   },
   "dependencies": {
     "dotenv": "^16.4.7",

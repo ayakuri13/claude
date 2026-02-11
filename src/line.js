@@ -1,15 +1,24 @@
 const PUSH_URL = "https://api.line.me/v2/bot/message/push";
 
+function fmt(n) {
+  if (n == null) return "?";
+  return n.toLocaleString();
+}
+
 function formatPost(post) {
-  return [
+  const lines = [
     `📢 ${post.keyword_label}`,
     ``,
     `${post.text.slice(0, 200)}${post.text.length > 200 ? "..." : ""}`,
     ``,
-    `❤️ ${post.likes}  🔁 ${post.retweets}  💬 ${post.replies}`,
+    `❤️ ${fmt(post.likes)}  🔁 ${fmt(post.retweets)}  💬 ${fmt(post.replies)}`,
     `👤 ${post.author}`,
-    `🔗 ${post.url}`,
-  ].join("\n");
+  ];
+  if (post.why_trending) {
+    lines.push(`💡 ${post.why_trending}`);
+  }
+  lines.push(`🔗 ${post.url}`);
+  return lines.join("\n");
 }
 
 function buildMessages(posts) {
