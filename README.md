@@ -173,6 +173,21 @@ AIを使った副業で月10万円を達成した方法を公開します...
     └── context-research/
 ```
 
+## マルチデバイス対応（PC・スマホで重複しない）
+
+デフォルトでは `data/notified.json` がローカルに保存されるため、
+PC・サーバーなど複数の環境で同時に動かすと同じ投稿が重複通知される。
+
+**解決策：** `STORE_PATH` 環境変数でストアファイルの場所を共有フォルダに向ける。
+
+```dotenv
+# .env に追加
+STORE_PATH=/path/to/Dropbox/trending-notifier/notified.json
+```
+
+DropboxやiCloud Driveなど、すべての環境から読み書きできる場所を指定することで
+どの端末で実行しても通知済みIDが共有され、重複通知を防げる。
+
 ## カスタマイズ
 
 ### 検索頻度を変える
