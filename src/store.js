@@ -1,9 +1,9 @@
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from "fs";
-import { dirname, resolve } from "path";
+import { dirname } from "path";
 import { fileURLToPath } from "url";
 
-const DEFAULT_STORE_FILE = fileURLToPath(new URL("../data/notified.json", import.meta.url));
-const STORE_FILE = process.env.STORE_PATH ? resolve(process.env.STORE_PATH) : DEFAULT_STORE_FILE;
+const STORE_PATH = new URL("../data/notified.json", import.meta.url);
+const STORE_FILE = fileURLToPath(STORE_PATH);
 
 const MAX_ENTRIES = 10000;
 
