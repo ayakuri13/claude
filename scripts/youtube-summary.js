@@ -1,4 +1,5 @@
-import YoutubeTranscript from "youtube-transcript";
+import * as YT from "youtube-transcript";
+const YoutubeTranscript = YT.YoutubeTranscript || YT.default || YT;
 import Anthropic from "@anthropic-ai/sdk";
 import dotenv from "dotenv";
 
