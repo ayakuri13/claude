@@ -1,4 +1,4 @@
-import { YoutubeTranscript } from "youtube-transcript";
+import { fetchTranscript } from "youtube-transcript";
 import Anthropic from "@anthropic-ai/sdk";
 import dotenv from "dotenv";
 
@@ -37,7 +37,7 @@ function formatTimestamp(ms) {
 
 async function getTranscript(videoId) {
   try {
-    const transcriptItems = await YoutubeTranscript.fetchTranscript(videoId, {
+    const transcriptItems = await fetchTranscript(videoId, {
       lang: "ja",
     });
     if (!transcriptItems || transcriptItems.length === 0) {
@@ -47,7 +47,7 @@ async function getTranscript(videoId) {
   } catch (e) {
     // 日本語字幕がなければ英語を試す
     try {
-      const transcriptItems = await YoutubeTranscript.fetchTranscript(videoId, {
+      const transcriptItems = await fetchTranscript(videoId, {
         lang: "en",
       });
       return transcriptItems;
