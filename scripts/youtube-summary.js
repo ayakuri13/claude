@@ -1,5 +1,3 @@
-import * as YT from "youtube-transcript";
-const YoutubeTranscript = YT.YoutubeTranscript || YT.default || YT;
 import Anthropic from "@anthropic-ai/sdk";
 import dotenv from "dotenv";
 
@@ -10,6 +8,9 @@ const client = new Anthropic({
 });
 
 const MODEL = "claude-sonnet-4-6";
+
+const USER_AGENT =
+  "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36";
 
 function extractVideoId(url) {
   const patterns = [
@@ -36,28 +37,174 @@ function formatTimestamp(ms) {
   return `${minutes}:${String(seconds).padStart(2, "0")}`;
 }
 
-async function getTranscript(videoId) {
-  try {
-    const transcriptItems = await YoutubeTranscript.fetchTranscript(videoId, {
-      lang: "ja",
+function decodeEntities(text) {
+  return text
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&apos;/g, "'")
+    .replace(/&#x([0-9a-fA-F]+);/g, (_, hex) =>
+      String.fromCodePoint(parseInt(hex, 16))
+    )
+    .replace(/&#(\d+);/g, (_, dec) =>
+      String.fromCodePoint(parseInt(dec, 10))
+    );
+}
+
+function parseTranscriptXml(xml) {
+  const results = [];
+  // Try <text start="..." dur="...">...</text> format
+  const textRegex = /<text start="([^"]*)" dur="([^"]*)">([^<]*)<\/text>/g;
+  let match;
+  while ((match = textRegex.exec(xml)) !== null) {
+    results.push({
+      offset: parseFloat(match[1]) * 1000,
+      duration: parseFloat(match[2]) * 1000,
+      text: decodeEntities(match[3]).trim(),
     });
-    if (!transcriptItems || transcriptItems.length === 0) {
-      throw new Error("字幕が見つかりませんでした");
+  }
+  if (results.length > 0) return results;
+
+  // Try <p t="ms" d="ms"> format
+  const pRegex = /<p\s+t="(\d+)"\s+d="(\d+)"[^>]*>([\s\S]*?)<\/p>/g;
+  while ((match = pRegex.exec(xml)) !== null) {
+    let text = match[3];
+    // Extract text from <s> tags if present
+    const sRegex = /<s[^>]*>([^<]*)<\/s>/g;
+    let sText = "";
+    let sMatch;
+    while ((sMatch = sRegex.exec(text)) !== null) {
+      sText += sMatch[1];
     }
-    return transcriptItems;
-  } catch (e) {
-    // 日本語字幕がなければ英語を試す
-    try {
-      const transcriptItems = await YoutubeTranscript.fetchTranscript(videoId, {
-        lang: "en",
+    text = sText || text.replace(/<[^>]+>/g, "");
+    text = decodeEntities(text).trim();
+    if (text) {
+      results.push({
+        offset: parseInt(match[1], 10),
+        duration: parseInt(match[2], 10),
+        text,
       });
-      return transcriptItems;
-    } catch {
-      throw new Error(
-        `文字起こしの取得に失敗しました: ${e.message}\n字幕が利用できない動画の可能性があります。`
-      );
     }
   }
+  return results;
+}
+
+async function fetchTranscriptViaInnerTube(videoId, lang) {
+  const response = await fetch(
+    "https://www.youtube.com/youtubei/v1/player?prettyPrint=false",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "User-Agent": "com.google.android.youtube/20.10.38 (Linux; U; Android 14)",
+      },
+      body: JSON.stringify({
+        context: {
+          client: { clientName: "ANDROID", clientVersion: "20.10.38" },
+        },
+        videoId,
+      }),
+    }
+  );
+  if (!response.ok) return null;
+
+  const data = await response.json();
+  const tracks =
+    data?.captions?.playerCaptionsTracklistRenderer?.captionTracks;
+  if (!Array.isArray(tracks) || tracks.length === 0) return null;
+
+  const track = lang
+    ? tracks.find((t) => t.languageCode === lang) || tracks[0]
+    : tracks[0];
+
+  const xmlResponse = await fetch(track.baseUrl, {
+    headers: { "User-Agent": USER_AGENT },
+  });
+  if (!xmlResponse.ok) return null;
+
+  const xml = await xmlResponse.text();
+  return parseTranscriptXml(xml);
+}
+
+async function fetchTranscriptViaWebPage(videoId, lang) {
+  const response = await fetch(
+    `https://www.youtube.com/watch?v=${videoId}`,
+    {
+      headers: {
+        "User-Agent": USER_AGENT,
+        ...(lang && { "Accept-Language": lang }),
+      },
+    }
+  );
+  const html = await response.text();
+
+  if (html.includes('class="g-recaptcha"')) {
+    throw new Error("YouTubeからCAPTCHAを要求されています。時間を置いて再試行してください。");
+  }
+
+  // Extract ytInitialPlayerResponse
+  const marker = "var ytInitialPlayerResponse = ";
+  const startIdx = html.indexOf(marker);
+  if (startIdx === -1) throw new Error("動画情報を取得できませんでした");
+
+  const jsonStart = startIdx + marker.length;
+  let depth = 0;
+  let endIdx = jsonStart;
+  for (let i = jsonStart; i < html.length; i++) {
+    if (html[i] === "{") depth++;
+    else if (html[i] === "}") {
+      depth--;
+      if (depth === 0) {
+        endIdx = i + 1;
+        break;
+      }
+    }
+  }
+
+  const playerData = JSON.parse(html.slice(jsonStart, endIdx));
+  const tracks =
+    playerData?.captions?.playerCaptionsTracklistRenderer?.captionTracks;
+
+  if (!Array.isArray(tracks) || tracks.length === 0) {
+    throw new Error("この動画には字幕がありません");
+  }
+
+  const track = lang
+    ? tracks.find((t) => t.languageCode === lang) || tracks[0]
+    : tracks[0];
+
+  const xmlResponse = await fetch(track.baseUrl, {
+    headers: { "User-Agent": USER_AGENT },
+  });
+  if (!xmlResponse.ok) throw new Error("字幕データの取得に失敗しました");
+
+  const xml = await xmlResponse.text();
+  return parseTranscriptXml(xml);
+}
+
+async function getTranscript(videoId) {
+  // InnerTube API を試す（日本語優先）
+  let items = await fetchTranscriptViaInnerTube(videoId, "ja");
+  if (items && items.length > 0) return items;
+
+  // InnerTube API（言語指定なし）
+  items = await fetchTranscriptViaInnerTube(videoId, null);
+  if (items && items.length > 0) return items;
+
+  // Webページから取得（フォールバック）
+  try {
+    items = await fetchTranscriptViaWebPage(videoId, "ja");
+    if (items && items.length > 0) return items;
+  } catch {
+    // ignore
+  }
+
+  items = await fetchTranscriptViaWebPage(videoId, "en");
+  if (items && items.length > 0) return items;
+
+  throw new Error("字幕を取得できませんでした。字幕が利用できない動画の可能性があります。");
 }
 
 function formatTranscript(items) {
