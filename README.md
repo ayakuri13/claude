@@ -24,6 +24,7 @@ LINE にプッシュ通知（or コンソール出力）
 |---------|------|------|
 | `npm start` | バズ投稿の定期検索 + LINE通知 | LINE / コンソール |
 | `npm run ideation -- --topic "AI"` | X の空気を読んで投稿ネタ出し | `data/ideation/` |
+| `npm run article -- --niche 復縁` | 恋愛系のバズをリサーチ→X記事ドラフト＋セルフ引用を生成 | `data/articles/` |
 | `npm run research -- --topic "..."` | 記事執筆前の周辺リサーチ | `data/context-research/` |
 
 ## セットアップ
@@ -114,6 +115,32 @@ npm run ideation -- --help
 - 今日の結論（狙うべき3テーマ）
 - 素材一覧（URL・要約・エンゲージ指標・フック案付き）
 
+### X記事ドラフト生成（恋愛系note運用）
+
+恋愛系で「今バズっている切り口」をリサーチし、そのまま投稿できるX記事ドラフトと
+セルフ引用案を一度に生成する。「X記事を量産→noteへ誘導」を1日15分で回すための核。
+
+```bash
+# 基本（鉄板は 復縁 / 回避 / 不倫）
+npm run article -- --niche 復縁
+
+# noteのURLを渡すとCTAに差し込む
+npm run article -- --niche 不倫 --count 3 --note "https://note.com/xxx/n/abc123"
+
+# プロンプトだけ確認
+npm run article -- --niche マチアプ攻略 --dry-run
+```
+
+出力: `data/articles/` に Markdown + JSON で保存。
+
+運用の全体像（30日プラン・毎日15分のルーティン・テンプレ・note商品の作り方）は
+[`playbook/`](playbook/) を参照:
+- [`playbook/恋愛note-15分プレイブック.md`](playbook/恋愛note-15分プレイブック.md) … 運用設計の本体
+- [`playbook/X記事テンプレート集.md`](playbook/X記事テンプレート集.md) … 記事/引用/構文の型
+- [`playbook/note商品-設計図.md`](playbook/note商品-設計図.md) … 最初に売る商品の作り方
+
+恋愛ジャンル用のバズ検知キーワードは [`config.romance.example.json`](config.romance.example.json) を `config.json` にコピーして使う。
+
 ### 周辺リサーチ（Context Research）
 
 記事を書く前の「地ならし」。一次情報・用語・反論・数字を揃えた Context Pack を作る。
@@ -162,7 +189,13 @@ AIを使った副業で月10万円を達成した方法を公開します...
 │   └── store.js                      # 重複通知防止
 ├── scripts/
 │   ├── ideation.js                   # 投稿ネタ出し
+│   ├── article.js                    # 恋愛系X記事ドラフト生成
 │   └── context_research.js           # 周辺リサーチ
+├── playbook/                         # 恋愛系note運用プレイブック（1日15分）
+│   ├── 恋愛note-15分プレイブック.md
+│   ├── X記事テンプレート集.md
+│   └── note商品-設計図.md
+├── config.romance.example.json       # 恋愛ジャンル用キーワード設定例
 ├── skills/
 │   └── x-trend-research/
 │       ├── SKILL.md                  # Claude Code スキル定義

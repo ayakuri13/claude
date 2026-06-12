@@ -1,0 +1,24 @@
+{
+  "_comment": "恋愛系note運用用のキーワード設定例。中身を config.json にコピーして使う。自分が発信するジャンルの行だけ残すのが基本（鉄板は復縁/回避/不倫）。",
+  "keywords": [
+    { "query": "復縁 lang:ja min_faves:300", "label": "復縁" },
+    { "query": "彼氏 別れたい 冷められた lang:ja min_faves:300", "label": "回避(冷却)" },
+    { "query": "不倫 既婚者 恋愛 lang:ja min_faves:300", "label": "不倫/婚外" },
+    { "query": "マッチングアプリ 攻略 lang:ja min_faves:300", "label": "マチアプ攻略" },
+    { "query": "婚活 うまくいかない lang:ja min_faves:300", "label": "婚活攻略" },
+    { "query": "男性心理 恋愛 あるある lang:ja min_faves:500", "label": "恋愛あるある" }
+  ],
+  "thresholds": {
+    "min_likes": 300,
+    "min_retweets": 50
+  },
+  "schedule": {
+    "cron": "0 8 * * *",
+    "description": "毎朝8時に1回（1日15分運用なら頻度は低めでOK）"
+  },
+  "search": {
+    "max_results_per_query": 10,
+    "lang": "ja",
+    "hours_ago": 48
+  }
+}

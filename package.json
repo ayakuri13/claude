@@ -8,6 +8,7 @@
     "start": "node src/index.js",
     "search-once": "node src/run-once.js",
     "ideation": "node scripts/ideation.js",
+    "article": "node scripts/article.js",
     "research": "node scripts/context_research.js"
   },
   "dependencies": {
