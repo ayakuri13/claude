@@ -1,107 +1,157 @@
-# note完全攻略講座 動画インデックス
+# note完全攻略講座 レッスンインデックス
 
-このファイルは講座の全動画の索引です。受講生から「◯◯の動画どこ?」と聞かれたら、まずこのファイルから該当動画を探してください。
-出典: 「【note講座】動画編集依頼」スプレッドシート(2026-07-10時点)。`要確認` はシート未記載または未確定の箇所。
+このファイルは講座の全レッスンの索引です。受講生から「◯◯の動画どこ?」と聞かれたら、まずこのファイルから該当レッスンを探してください。
+案内するURLは原則「レッスンページ(Notion会員サイト)」。動画・内容要約・ワークが全てそこにまとまっています。
+出典: Notion会員サイト「note完全攻略講座(新)」(2026-07-12時点)
+
+会員サイト入口: https://app.notion.com/p/a921ec79161a8316b4980194a6df0f6f
+問い合わせ: 事務局 utolog573@gmail.com / 問い合わせLINE(会員サイト冒頭に記載)
+講座生コミュニティ: Discord(1章の「Discordについて」参照)
+
+重要度の意味: 「超重要」=最優先で視聴 / 「重要」=次に視聴 / 無印=余裕ができたら
 
 ## 1章: 新時代のnote戦略・最強の3軸運用
 
-| 動画No | タイトル | ひとこと概要 | 会員サイト |
+| レッスン | 重要度 | ひとこと概要 | レッスンページ |
 |---|---|---|---|
-| note1_1 | オリエンテーション | 講座の目的・ゴール(月10万のユルnoter)・全体の進め方 | https://utage-system.com/video/oMP4EPkTsikP |
-| note1_2 | 【眠いけど重要】ビジネスの設計の基礎基本 | 集客・教育・販売・決済・アフターフォローの5フェーズと「買わない理由潰し」 | https://utage-system.com/video/chov1uP3r6nj |
-| note1_3 | なぜnoteなのか? | noteが集客〜決済まで1つで完結するオールインワン媒体である理由 | https://utage-system.com/video/z4adtfwunehT |
+| 1. オリエンテーション | 超重要 | 講座の対象者・目的・ゴール(月10万のゆるnoter) | https://app.notion.com/eef1ec79161a831b931081ffd7051b17 |
+| 2. 【眠いけど重要】ビジネスの設計の基礎基本 | 超重要 | 集客・教育・販売・決済・アフターフォローの5フェーズと「買わない理由潰し」 | https://app.notion.com/0e71ec79161a8240ba23016aa5da6aa4 |
+| 3. なぜnoteなのか? | 超重要 | noteが集客〜決済まで完結するオールインワン媒体である理由 | https://app.notion.com/be41ec79161a837e8274816649cb2953 |
+| Discordについて(テスト運用) | 重要 | 講座生コミュニティの参加方法 | https://app.notion.com/8501ec79161a83eeaac4012bee9d550d |
 
 ## 2章: 成果を出す人の9割はできていること
 
-| 動画No | タイトル | ひとこと概要 | 会員サイト |
+| レッスン | 重要度 | ひとこと概要 | レッスンページ |
 |---|---|---|---|
-| note2_1 | 9割が挫折する理由は思考の癖 | 続かない原因(マインド)と成果を出す人の考え方 | https://utage-system.com/video/X7sFziIGLqdb |
+| 1. 9割が挫折する理由は思考の癖 | 超重要 | 続かない原因(マインド)と成果を出す人の考え方 | https://app.notion.com/ceb1ec79161a82debbe58109c3b7aa33 |
 
 ## 3章: noteはどんな媒体か徹底解説
 
-| 動画No | タイトル | ひとこと概要 | 会員サイト |
+| レッスン | 重要度 | ひとこと概要 | レッスンページ |
 |---|---|---|---|
-| note3_1 | noteという媒体の基礎知識 | noteの特徴・強み・SEO・機能と多様な収益化手段 | https://utage-system.com/video/k58HmYDldGnD |
+| 1. noteという媒体の基礎知識 | 重要 | noteの特徴・強み・SEO・収益化機能の全体像 | https://app.notion.com/e601ec79161a8249b19f018cd5ef671c |
 
 ## 4章: ジャンルとコンセプトを固めよう
 
-| 動画No | タイトル | ひとこと概要 | 会員サイト |
+| レッスン | 重要度 | ひとこと概要 | レッスンページ |
 |---|---|---|---|
-| note4_1 | コンセプト設計 | コンセプトの型と決め方の全体像 | https://utage-system.com/video/2GsgZmMPpPbf |
-| note4_2_1 | 自己分析の方法 | 過去の棚卸しで自分の強み・売れる素材を見つける | https://utage-system.com/video/IxHAK8JY0Kc0 |
-| note4_2_2 | ワーク: 自己分析ワークシートを埋めよう | コンセプトシート(①ブレ)の記入手順 | https://utage-system.com/video/dyxpw8duECMM |
-| note4_2_3 | 顧客の悩みをリサーチする | ターゲットリサーチの具体的な方法 | https://utage-system.com/video/c1cCCRwqhAID |
-| note4_2_4 | YouTubeでリサーチする | YouTubeを使った顧客の悩みリサーチ術 | https://utage-system.com/video/jgUtlbdy9qbE |
-| note4_3 | noteの需要検索方法 | note内の需要の調べ方(競合リサーチ) | https://utage-system.com/video/1eyQMbzqNhH1 |
-| note4_4_1 | 売れる市場を見つける4つの法則 | 売れるジャンル選定の法則 | https://utage-system.com/video/xgZKqeLM3mcr |
-| note4_4_2 | 4つのHARMについて | Health/Ambition/Relation/Money=売れる4大市場 | https://utage-system.com/video/5vbywkX56PWx |
-| note4_5 | SNSでポジションをとる理由 | ポジショニングがマネタイズに効く理由 | https://utage-system.com/video/3vXQ6q21BM0B |
-| note4_6 | 唯一無二のポジションを取る方法 | 掛け合わせで独自ポジションを作る | https://utage-system.com/video/E6YANrD1ouwC |
-| note4_7 | 実践編① SNSリサーチ | 実際にSNSで競合・市場をリサーチする | https://utage-system.com/video/d5zRbzvu5EiX |
-| note4_8 | プロフィールを作ろう | 売れるプロフィールの作り方 | https://utage-system.com/video/l1SuI5QxwQ1c |
-| note4_9 | 実践編② noteプロフィールを作ろう | noteのプロフィール欄を実際に作る | https://utage-system.com/video/pgdfaGXKKa1x |
-| note4_10 | アイコンはどう選ぶ? | 信頼されるアイコンの選び方 | 要確認 |
+| 1. コンセプト設計 | 超重要 | コンセプトの型と決め方の全体像 | https://app.notion.com/f8f1ec79161a831ea3f00154563c96eb |
+| 2. 自社リサーチ(自己分析)について | 超重要 | 過去の棚卸しで強み・売れる素材を見つける(動画2本) | https://app.notion.com/7dd1ec79161a827d99e681c2858cb84a |
+| 3. ターゲットリサーチ(顧客リサーチ) | 超重要 | 顧客の悩みの調べ方(動画2本) | https://app.notion.com/bab1ec79161a821598210153fc137a58 |
+| 4. 競合リサーチ | 超重要 | 競合の調べ方と差別化の見つけ方 | https://app.notion.com/eaf1ec79161a83da82d681ca5391782c |
+| 5. 【絶対に押さえたい】売れる市場の法則 | 超重要 | 売れる市場の法則・4つのHARM(動画2本) | https://app.notion.com/7351ec79161a8249ad318151ce455c62 |
+| 6. SNSでポジションをとる理由 | 超重要 | ポジショニングがマネタイズに効く理由 | https://app.notion.com/98a1ec79161a834d8ee081e5267575e7 |
+| 7. 唯一無二のポジションを取る方法 | 超重要 | 掛け合わせで独自ポジションを作る | https://app.notion.com/c811ec79161a8249a85e81629cc27b77 |
+| 8. プロフィールを作ろう | 超重要 | 売れるプロフィールの作り方(動画2本) | https://app.notion.com/2011ec79161a82fdb15401355fbc336d |
+| コンセプト設計ツール(GPT) | - | コンセプト設計を手伝うAIツール | https://chatgpt.com/g/g-69e9f392687c81918efd197c3ec0162e-konsehutoti-an-tiyan |
 
-## 5章: 有料noteを作ろう(noteのマネタイズ方法)
+## 5章: 有料noteを作ろう
 
-| 動画No | タイトル | ひとこと概要 | 会員サイト |
+| レッスン | 重要度 | ひとこと概要 | レッスンページ |
 |---|---|---|---|
-| note5_1 | noteのマネタイズ全体像: 初心者が選ぶべきはこの2つ | 収益化手段の全体像と初心者の最適解 | https://utage-system.com/video/4PtKNhMSEgyj |
-| note5_2 | 有料noteのテーマ決め: 売れるテーマは"型"で選ぶ | 売れるテーマの型と選び方 | https://utage-system.com/video/hQtie8qWbNmZ |
-| note5_3 | noteの価格・文字数・相場の決め方 | 適正価格・文字数・相場の考え方 | 要確認 |
-| note5_4 | 有料noteの構成テンプレート全解説 | 雛構成(全体構成チェック表)の使い方 | https://utage-system.com/video/VaNwNzVrgJpc |
-| note5_5 | noteが売れない時の改善チェック項目 | 売れない原因の診断チェックリスト | https://utage-system.com/video/l5k0nk0Sob9Y |
-| note5_6 | サムネイル選定と読まれるタイトルの作り方 | 有料noteのサムネとタイトル | https://utage-system.com/video/QCFfYbMXJ04o |
-| note5_7 | LINE公式アカウント作成と設定について | LINE公式の開設とツールの繋ぎこみ | https://utage-system.com/video/j5jI4aUSl1IK |
+| 1. noteのマネタイズ全体像: 初心者が選ぶべきはこの2つ | 超重要 | 収益化手段の全体像と初心者の最適解 | https://app.notion.com/a421ec79161a8315acde010cb09ff4f4 |
+| 2. 有料noteのテーマ決め: 売れるテーマは"型"で選ぶ | 超重要 | 売れるテーマの型と選び方 | https://app.notion.com/4dc1ec79161a826b913c018a811fbb7e |
+| 3. noteの価格・文字数・相場の決め方 | 重要 | 適正価格・文字数・相場の考え方 | https://app.notion.com/1f71ec79161a83c3bda9814fc7bb0074 |
+| 4. 有料noteの構成テンプレート全解説 | 重要 | 雛構成(全体構成チェック表)の使い方 | https://app.notion.com/4751ec79161a83bba502810fbce35f91 |
+| 5. noteが売れない時の改善チェック項目 | 超重要 | 売れない原因の診断チェックリスト | https://app.notion.com/1bf1ec79161a8375bf8d81da80997afa |
+| 6. サムネイル選定と読まれるタイトルの作り方 | 超重要 | 有料noteのサムネとタイトル | https://app.notion.com/5b21ec79161a8323949001bdd9255dfc |
+| 7. LINE公式アカウント作成と設定について | 超重要 | LINE公式の開設とツールの繋ぎこみ | https://app.notion.com/f941ec79161a835c9f5081f1019a9c7d |
+| 有料note執筆ツール(GPT) | - | 有料note本文の執筆を手伝うAIツール | https://app.notion.com/f9dd4bf7ecb74199bcd2cf82bc62efed |
 
 ## 6章: 無料noteを作って世に出そう
 
-| 動画No | タイトル | ひとこと概要 | 会員サイト |
+| レッスン | 重要度 | ひとこと概要 | レッスンページ |
 |---|---|---|---|
-| note6_1 | 無料noteの作り方 | 集客用の無料記事の作り方 | https://utage-system.com/video/listsgaQZ48r |
-| note6_2 | 誰でも読めるnote無料記事を書く5つの構成要素 | 無料記事の構成テンプレート | https://utage-system.com/video/y21Lc6noIoPB |
-| note6_3 | 無料noteのサムネイルを解説 | 無料記事のサムネイル作成 | https://utage-system.com/video/0QocI7qpRgQX |
-| note6_4 | CTAページ | 記事末尾の誘導(CTA)ページの作り方 | https://utage-system.com/video/sFbxT0DJt9T3 |
-| note6_5 | 実践・AIツールを使って執筆する | AIを使った記事執筆の実演 | https://utage-system.com/video/lCzft95cMf4x |
-| note6_6 | 実践・Claudeを使ってストーリー記事を執筆する | Claudeでストーリー記事を書く実演(前編: https://utage-system.com/video/ejvl9dTbLE7A / 後編: https://utage-system.com/video/m2fmjz2eEgFv) | https://utage-system.com/video/ytSevUxVnxIV |
-| note6_7 | (タイトル要確認: AI執筆・実践解説の続き) | 「都合のいい女」実践解説を含む執筆実演 | https://utage-system.com/video/ubItKUoLalPV |
-| note6_8 | noteマガジン機能について | マガジン機能の使い方と活用 | https://utage-system.com/video/cXawkk3g9lQT |
+| 1. 無料noteの作り方 | 超重要 | 集客用の無料記事の作り方 | https://app.notion.com/dad1ec79161a8379a18b012161fd6e10 |
+| 2. 誰でも読めるnote無料記事を書く5つの構成要素 | - | 無料記事の構成テンプレート | https://app.notion.com/8fe1ec79161a8303974401381c0313c9 |
+| 3. 無料noteのサムネイルを解説 | - | 無料記事のサムネイル作成 | https://app.notion.com/2f21ec79161a82fa9c70813488fcf4b3 |
+| 4. CTAページ | - | 記事末尾の誘導(CTA)ページの作り方 | https://app.notion.com/7d61ec79161a8233aa76012c0fbba6a3 |
+| 5. 実践・AIツールを使って執筆する | 重要 | AIを使った記事執筆の実演 | https://app.notion.com/43f1ec79161a83379410015beb77def1 |
+| 6. 実践・Claudeを使ってストーリー記事を執筆する | - | Claudeでストーリー記事を書く実演 | https://app.notion.com/9061ec79161a83cc975001a137794757 |
+
+## 6.5章: note集客の機能あれこれ
+
+| レッスン | 重要度 | ひとこと概要 | レッスンページ |
+|---|---|---|---|
+| 手を動かすだけのnote集客の機能あれこれ | - | 6.5章の概要 | https://app.notion.com/6a11ec79161a8337bf4e81c98ebb249e |
+| 1. note内の認知を増やす! フォロー&スキ作戦① | - | note内での認知の増やし方 | https://app.notion.com/4391ec79161a82cb956f81a099301d08 |
+| 2. note内の認知を増やす! 検索、類似ワードの探し方 | - | note内検索・類似ワード活用 | https://app.notion.com/35a1ec79161a82359d5c015d476c97c4 |
+| 3. noteマガジン機能について | - | マガジン機能の使い方と活用 | https://app.notion.com/beb1ec79161a82e7a29e01cf6f4209f3 |
 
 ## 7章: ストーリーライティングで魅力を伝えよう
 
-| 動画No | タイトル | ひとこと概要 | 会員サイト |
+| レッスン | 重要度 | ひとこと概要 | レッスンページ |
 |---|---|---|---|
-| note7_1〜7_5 | 要確認(全5本) | ストーリーライティングの型と実践 | 要確認 |
+| 1. 人の心を動かす物語の力・ストーリーライティング | - | ストーリーで伝える理由と効果 | https://app.notion.com/fba1ec79161a8303b8c1016269d232f1 |
+| 2. 文章苦手でも今すぐ書ける! 読まれるライティング5原則 | - | 読まれる文章の5原則 | https://app.notion.com/3621ec79161a82a2b66d01e986504f33 |
+| 3. 読者の共感を得る感情設計｜心を動かす5つのテクニック | - | 感情を動かす5テクニック | https://app.notion.com/6a01ec79161a83398d9a813a5d36b4d7 |
+| 4. 自分の体験を物語化する方法｜三幕構成でストーリーを作る | - | 三幕構成での物語化 | https://app.notion.com/b781ec79161a82cf99ee019709a80b61 |
+| 5. あなたはどっち? ストーリー型vs有益情報型 | - | 自分に合う発信タイプ診断 | https://app.notion.com/87d1ec79161a82628c74818892632503 |
 
 ## 8章: 商品を増やして回遊する仕組みを作ろう
 
-| 動画No | タイトル | ひとこと概要 | 会員サイト |
+| レッスン | 重要度 | ひとこと概要 | レッスンページ |
 |---|---|---|---|
-| note8_x | 要確認 | 複数商品と回遊導線の設計 | 要確認 |
+| 1. 低単価から高単価まで「商品設計」の全手順 | - | 商品ラインナップの設計手順 | https://app.notion.com/e611ec79161a831f80b481cac754e0fa |
 
 ## 9章: 放置集客編 SEOとキーワード選定
 
-| 動画No | タイトル | ひとこと概要 | 会員サイト |
+| レッスン | 重要度 | ひとこと概要 | レッスンページ |
 |---|---|---|---|
-| note9_1〜9_2 | 要確認 | SEOの基礎とキーワード選定 | 要確認 |
-| note9_3 | 要確認 | SEO・キーワード選定 | https://utage-system.com/video/tPJtfQRRF93K |
-| note9_4 | 要確認 | SEO・キーワード選定 | 要確認 |
-| note9_5 | 要確認 | SEO・キーワード選定 | 要確認 |
+| 1. SNS疲れを解消｜noteのSEOで"勝手にアクセス"を生む仕組み | - | note×SEOで自動集客する理由と全体像 | https://app.notion.com/2481ec79161a8200abd901aab1a2fa00 |
+| 2. AIを使ったSEO対策｜検索上位を狙うための3つのポイント | - | AI×SEOの3ポイント | https://app.notion.com/ca71ec79161a822c9f2d0152d82aad47 |
+| 3. 【実践解説】 | - | SEO実践解説 | https://app.notion.com/3541ec79161a82ada8c6010c298ff44e |
+| 4. AIで抽出したキーワードをSEOツールでリサーチ | - | キーワードのリサーチ実践 | https://app.notion.com/6961ec79161a838fa44c013a6c48d53e |
+| 5. キーワードリストから需要が高そうなものを選択し執筆 | - | キーワード選定→執筆の流れ | https://app.notion.com/e761ec79161a82bd98c3015c9fe1eb19 |
+| 【補足】キーワードを探す前の時短プロンプト | - | キーワード探しの時短プロンプト | https://app.notion.com/7b71ec79161a83c891be010c94ff2b3e |
 
 ## 10章: 選ぶべきSNSと集客方法
 
-| 動画No | タイトル | ひとこと概要 | 会員サイト |
+| レッスン | 重要度 | ひとこと概要 | レッスンページ |
 |---|---|---|---|
-| note10_1〜10_3 | 要確認(全3本) | SNSの選び方と集客法 | 要確認 |
+| 1. おすすめSNS徹底比較｜noteと相性抜群なプラットフォームは? | - | note×SNSの組み合わせ比較 | https://app.notion.com/3e31ec79161a838b8cbc81244aca4e52 |
+| 2. 【無駄を減らす】SNSを活用したテストマーケティング | - | SNSでのテストマーケ手法 | https://app.notion.com/9431ec79161a822c978b014aa6dc07cd |
+| 3. メルマガ・LINE公式でのリスト活用について | - | リストマーケティングの基本 | https://app.notion.com/d6f1ec79161a82a69b56814d1e791845 |
 
 ## 11章: リライトライティングや修正改善
 
-| 動画No | タイトル | ひとこと概要 | 会員サイト |
+| レッスン | 重要度 | ひとこと概要 | レッスンページ |
 |---|---|---|---|
-| note11_1〜11_2 | 要確認(全2本) | リライトと改善の方法 | 要確認 |
+| 1. リライトライティングや修正改善 | 重要 | リライトの考え方と手順 | https://app.notion.com/2e51ec79161a83d7be9d8122f0e471f3 |
+| 2. AIで行うSEOリライトの3ステップ | 重要 | AIでのSEOリライト3ステップ | https://app.notion.com/ed91ec79161a8386825681131e993ee4 |
 
 ## 12章: 実績作りと2軸展開の方法
 
-| 動画No | タイトル | ひとこと概要 | 会員サイト |
+| レッスン | 重要度 | ひとこと概要 | レッスンページ |
 |---|---|---|---|
-| note12_1〜12_2 | 要確認(全2本) | 実績作りと2軸展開(Threadsビジネス系攻略を含む) | 要確認 |
+| 1. 実績作りと2軸展開の方法 | 超重要 | 実績の作り方と2軸展開の戦略 | https://app.notion.com/2641ec79161a8277afad812b6c4f83af |
+| 2. Threads×ビジネス系攻略 | 超重要 | Threadsをビジネス系で攻略する方法 | https://app.notion.com/bcf1ec79161a83a1a6f38164e7d82540 |
+
+## 13章: AIをどんどん使っていこう
+
+| レッスン | 重要度 | ひとこと概要 | レッスンページ |
+|---|---|---|---|
+| 1. おすすめAIツール紹介 | - | 講座おすすめのAIツール一覧 | https://app.notion.com/af01ec79161a82399dac81aafa40ac9f |
+
+## 質問会アーカイブ
+
+| レッスン | 重要度 | ひとこと概要 | レッスンページ |
+|---|---|---|---|
+| 3月16日質問会 | - | 質問会の録画アーカイブ | https://app.notion.com/0771ec79161a83f38d6d81e713ff6fce |
+
+## 10大特典(詳細は 06_bonuses.md 参照)
+
+| 特典 | 種類 |
+|---|---|
+| 特典1: 売れているnote100選(リサーチシート) | Googleスプレッドシート |
+| 特典2: SEO特化×無料note本文 執筆ツール | GPTツール |
+| 特典3: 無料部分記事を書くライターさん | GPTツール |
+| 特典4: コンセプト設計ワークシート | Googleスプレッドシート |
+| 特典5: サムネ&挿絵 画像生成AIツール | GPTツール |
+| 特典6: 軽量リライト診断(AIプロンプト) | プロンプト |
+| 特典7: 30日間To-Doタスクシート | シート |
+| 特典8: コンテンツアフィリエイトセミナー | 動画 |
+| 特典9: アフィリエイト用無料note記事プロンプト | 動画+プロンプト |
+| 特典10: メルマガ&note講座アフィリエイト権利 | 権利 |
+| 特典11: 講座生限定・Discord | コミュニティ |
+| 特典12: noteライティングツール | GPTツール |
