@@ -43,7 +43,7 @@
 | 6. SNSでポジションをとる理由 | 超重要 | ポジショニングがマネタイズに効く理由 | https://app.notion.com/98a1ec79161a834d8ee081e5267575e7 |
 | 7. 唯一無二のポジションを取る方法 | 超重要 | 掛け合わせで独自ポジションを作る | https://app.notion.com/c811ec79161a8249a85e81629cc27b77 |
 | 8. プロフィールを作ろう | 超重要 | 売れるプロフィールの作り方(動画2本) | https://app.notion.com/2011ec79161a82fdb15401355fbc336d |
-| コンセプト設計ツール(GPT) | - | コンセプト設計を手伝うAIツール | https://chatgpt.com/g/g-69e9f392687c81918efd197c3ec0162e-konsehutoti-an-tiyan |
+| コンセプト設計ツール(GPT) | - | コンセプト設計を手伝うAIツール | https://chatgpt.com/g/g-69e9f392687c81918efd197c3ec0162e-konsehutoti-an-tiyan (※要確認: レッスンページ本文には別URL「...konsehutoti-an-san」の記載あり。会員サイトのお知らせに「ツール調整でURL変更」とあるためどちらが現行か確認) |
 
 ## 5章: 有料noteを作ろう
 
