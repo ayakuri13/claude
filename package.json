@@ -10,8 +10,11 @@
     "ideation": "node scripts/ideation.js",
     "research": "node scripts/context_research.js"
   },
+  "engines": {
+    "node": ">=24.22.1"
+  },
   "dependencies": {
     "dotenv": "^16.4.7",
-    "node-cron": "^3.0.3"
+    "node-cron": "^4.6.0"
   }
 }
